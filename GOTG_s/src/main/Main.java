@@ -23,7 +23,7 @@ public class Main extends Canvas implements Runnable{
     private Thread thread;
 
     private BufferedImage image= new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
-    private BufferedImage asteroid=null;
+    private BufferedImage asteroid;
     private String asteroidPath= "/asteroid.png";
 
     public void init()
@@ -110,7 +110,7 @@ public class Main extends Canvas implements Runnable{
 
         g.drawImage(image, 0, 0, getWidth(),getHeight(), this);
 
-        g.drawImage(asteroid, 100, 100, this);
+        //g.drawImage(asteroid, 28, 32, null);
         
         g.dispose();
         bs.show();
