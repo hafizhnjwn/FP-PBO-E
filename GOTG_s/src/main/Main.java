@@ -52,7 +52,6 @@ public class Main extends Canvas implements Runnable{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.exit(1);
     }
 
 
